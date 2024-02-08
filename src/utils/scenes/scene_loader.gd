@@ -2,7 +2,7 @@ extends CanvasLayer
 
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
-var default_scene_path = "res://src/scenes/"
+var default_scene_path = "res://src/gameScreens/"
 
 var tween: Tween
 	

@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="project-g"
-run/main_scene="res://src/scenes/menu_scene.tscn"
-config/features=PackedStringArray("4.1", "Forward Plus")
+run/main_scene="res://src/gameScreens/menu_scene.tscn"
+config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
