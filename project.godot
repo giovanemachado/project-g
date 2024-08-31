@@ -10,13 +10,14 @@ config_version=5
 
 [application]
 
-config/name="project-g"
-run/main_scene="res://src/gameScreens/menu_scene.tscn"
-config/features=PackedStringArray("4.2", "Forward Plus")
+config/name="project-g-godot4.3"
+config/description="Game template for Godot 4.3"
+run/main_scene="res://menu_scene.tscn"
+config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
-Globals="*res://src/utils/scripts/Globals.gd"
-SignalBus="*res://src/utils/scripts/SignalBus.gd"
-SceneLoader="*res://src/utils/scenes/scene_loader.tscn"
+Globals="*res://utils/Globals.gd"
+SignalBus="*res://utils/SignalBus.gd"
+SceneLoader="*res://utils/scenes/scene_loader.tscn"
