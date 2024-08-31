@@ -1,2 +1,2 @@
 # project-g
-Template for Godot4 games.
+Game template for Godot 4.3
