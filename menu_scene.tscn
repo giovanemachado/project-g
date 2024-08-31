@@ -1,9 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://bgu57tkevo1s6"]
+[gd_scene load_steps=2 format=3 uid="uid://cj3df4ck6peaf"]
 
-[ext_resource type="Script" path="res://src/gameScreens/Tutorial.gd" id="1_marxu"]
+[sub_resource type="GDScript" id="GDScript_mq517"]
+script/source = "extends Node2D
 
-[node name="Tutorial" type="Node2D"]
-script = ExtResource("1_marxu")
+
+func _on_play_pressed():
+	SceneLoader.scene_transition(SceneLoader.SCENES.MAIN)
+"
+
+[node name="Menu" type="Node2D"]
+script = SubResource("GDScript_mq517")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -34,7 +40,15 @@ offset_bottom = 30.5
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TutorialTitle" type="Label" parent="CanvasLayer/Control/VBoxContainer"]
+[node name="GameTitle" type="Label" parent="CanvasLayer/Control/VBoxContainer"]
 layout_mode = 2
-text = "tutorial"
+text = "project-g - godot 4.3"
 horizontal_alignment = 1
+
+[node name="Play" type="Button" parent="CanvasLayer/Control/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "play"
+
+[connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/Play" to="." method="_on_play_pressed"]

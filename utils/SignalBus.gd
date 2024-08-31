@@ -1,6 +1,6 @@
 extends Node
 
-signal game_over
+# signal game_over
 
 
 # To connect:

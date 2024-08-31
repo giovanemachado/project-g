@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhu8srnbvjpn5"
-path="res://.godot/imported/light_point.png-0e97d190be12469d90a2e762c58096c7.ctex"
+path="res://.godot/imported/light_point.png-564ef592bed7cd29cad94d538c4ea883.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/utils/assets/light_point.png"
-dest_files=["res://.godot/imported/light_point.png-0e97d190be12469d90a2e762c58096c7.ctex"]
+source_file="res://assets/light_point.png"
+dest_files=["res://.godot/imported/light_point.png-564ef592bed7cd29cad94d538c4ea883.ctex"]
 
 [params]
 

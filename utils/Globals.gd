@@ -1,15 +1,5 @@
 extends Node
 
-const SCENES = {
-	GAME = 'gameplay_scene',
-	CREDITS = 'credits_scene',
-	TUTORIAL = 'tutorial_scene',
-}
-
-const GROUPS = {
-	PLAYER = 'player',
-}
-
 #enum ExampleEnum {A, B}
 #
 #const EXAMPLE_CONST = 'const value'
