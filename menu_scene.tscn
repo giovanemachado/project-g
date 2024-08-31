@@ -1,15 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://cj3df4ck6peaf"]
 
-[sub_resource type="GDScript" id="GDScript_mq517"]
-script/source = "extends Node2D
-
-
-func _on_play_pressed():
-	SceneLoader.scene_transition(SceneLoader.SCENES.MAIN)
-"
+[ext_resource type="Script" path="res://menu_scene.gd" id="1_s1wa1"]
 
 [node name="Menu" type="Node2D"]
-script = SubResource("GDScript_mq517")
+script = ExtResource("1_s1wa1")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
