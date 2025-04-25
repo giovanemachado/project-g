@@ -1,3 +1,3 @@
 # project-g
 
-Game template for Godot 4.3
+my [godot](https://godotengine.org/) 4 template for minigames
