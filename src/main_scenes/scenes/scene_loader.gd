@@ -1,18 +1,18 @@
 extends CanvasLayer
 
-
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var tree = get_tree()
 
-
 var tween: Tween
 
-
 const SCENES = {
-	MENU = "res://menu_scene.tscn",
-	MAIN = "res://main_scene.tscn"
+	MENU = "res://src/main_scenes/menu_scene.tscn",
+	MAIN = "res://src/main_scenes/main_scene.tscn"
 }
 
+func _ready():
+	if Globals.debug_mode:
+		SceneLoader.scene_transition(SceneLoader.SCENES.MAIN)
 
 func scene_transition(target: String):
 	assert(!SCENES.has(target), "scene doesnt exist")

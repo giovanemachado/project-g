@@ -26,7 +26,6 @@ const EXAMPLE_CONST_OBJECT = {
 		PROPERTY2 = 'property 2',
 }
 
-
 func _init():
 	# Groups can be set via code or UI
 	add_to_group("guards")
@@ -50,13 +49,11 @@ func _init():
 	assert(speed >= 0 and speed < 20) # You can also combine the two conditional statements in one check.
 	assert(speed < 20, "the speed limit is 20") # Show a message.
 
-
 # Signals
 func _ready():
 	var timer = get_node("Timer")
 	# Connect to signal
 	timer.timeout.connect(_on_timer_timeout)
-
 
 func _exit_tree():
 	var timer = get_node("Timer")

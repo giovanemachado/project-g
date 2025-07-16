@@ -1,5 +1,7 @@
 extends Node
 
+var debug_mode = false
+
 #enum ExampleEnum {A, B}
 #
 #const EXAMPLE_CONST = 'const value'
