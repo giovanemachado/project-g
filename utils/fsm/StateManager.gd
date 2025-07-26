@@ -1,5 +1,5 @@
 # DO NOT USE THIS DIRECTLY, CREATE A NEW FILE AND EXTEND IT
-extends Node2D
+extends Node
 
 class_name StateManager
 
@@ -24,25 +24,19 @@ func _ready():
 		initial_state._on_enter()
 		current_state = initial_state
 
-
 func _process(delta):
 	if current_state:
 		current_state._on_update(delta)
-
 
 func _physics_process(delta):
 	if current_state:
 		current_state._on_physics_update(delta)
 
-
-func on_child_transition(state: State, new_state_name: String):
+func on_child_transition(state: State, next_state: State):
 	if is_locked:
 		return
 		
-#	if state != current_state && current_state != null:
-#		return
-		
-	var new_state : State = states.get(new_state_name.to_lower())
+	var new_state : State = next_state
 
 	if !new_state:
 		return
@@ -69,3 +63,14 @@ func check_state_by_name(state_a: String, state_b: String):
 	
 func is_current_state(state: State):
 	return check_state_by_name(state.name, current_state.name)
+	
+func transition_to(next_state: State):
+	current_state.transition_to(next_state)
+
+func transition_to_by_name(next_state_name: String):
+	var new_state : State = states.get(next_state_name.to_lower())
+	
+	if !new_state:
+		return
+		
+	transition_to(new_state)
