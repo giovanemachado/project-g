@@ -19,8 +19,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 Globals="*res://utils/Globals.gd"
-SignalBus="*res://utils/SignalBus.gd"
 SceneLoader="*res://src/main_scenes/scenes/scene_loader.tscn"
+AutoloadMusicManager="*res://src/music/music_manager.tscn"
 
 [display]
 

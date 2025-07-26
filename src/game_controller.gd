@@ -19,3 +19,7 @@ func quit_game():
 
 func _on_quit_pressed() -> void:
 	quit_game()
+
+
+func _on_toggle_music_pressed() -> void:
+	Globals.toggle_music.emit()

@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dhv3xgaopsbgx"]
+[gd_scene load_steps=3 format=3 uid="uid://dhv3xgaopsbgx"]
 
 [ext_resource type="Script" uid="uid://2dycoec22pj2" path="res://src/game_controller.gd" id="1_bcs0a"]
+[ext_resource type="Theme" uid="uid://c8sxw4adffktc" path="res://src/theme.tres" id="2_bboyy"]
 
 [node name="Main" type="Node"]
 
@@ -18,6 +19,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("2_bboyy")
 
 [node name="ColorRect" type="ColorRect" parent="UI/DebugMenu"]
 layout_mode = 2
@@ -51,4 +53,10 @@ custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 text = "quit"
 
+[node name="ToggleMusic" type="Button" parent="UI/DebugMenu/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "toggleMusic"
+
 [connection signal="pressed" from="UI/DebugMenu/VBoxContainer/Quit" to="GameController" method="_on_quit_pressed"]
+[connection signal="pressed" from="UI/DebugMenu/VBoxContainer/ToggleMusic" to="GameController" method="_on_toggle_music_pressed"]
