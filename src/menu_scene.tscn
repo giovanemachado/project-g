@@ -1,14 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://cj3df4ck6peaf"]
+[gd_scene format=3 uid="uid://cj3df4ck6peaf"]
 
-[ext_resource type="Script" uid="uid://cu1tglk2x41hm" path="res://src/main_scenes/menu_scene.gd" id="1_s1wa1"]
+[ext_resource type="Script" uid="uid://cu1tglk2x41hm" path="res://src/menu_scene.gd" id="1_s1wa1"]
 [ext_resource type="Theme" uid="uid://c8sxw4adffktc" path="res://src/theme.tres" id="2_8hgjg"]
 
-[node name="Menu" type="Node"]
+[node name="Menu" type="Node" unique_id=1509443607]
 script = ExtResource("1_s1wa1")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=735846880]
 
-[node name="Control" type="Control" parent="CanvasLayer"]
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=503026047]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -17,15 +17,15 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("2_8hgjg")
 
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control"]
-layout_mode = 2
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control" unique_id=2028860585]
+layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.509804, 0.509804, 0.509804, 1)
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control" unique_id=1112980064]
 layout_mode = 1
 anchors_preset = 14
 anchor_top = 0.5
@@ -36,12 +36,12 @@ offset_bottom = 30.5
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="GameTitle" type="Label" parent="CanvasLayer/Control/VBoxContainer"]
+[node name="GameTitle" type="Label" parent="CanvasLayer/Control/VBoxContainer" unique_id=1096244986]
 layout_mode = 2
 text = "project-g - godot 4.3"
 horizontal_alignment = 1
 
-[node name="Play" type="Button" parent="CanvasLayer/Control/VBoxContainer"]
+[node name="Play" type="Button" parent="CanvasLayer/Control/VBoxContainer" unique_id=140953793]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4

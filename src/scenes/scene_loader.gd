@@ -6,9 +6,9 @@ extends CanvasLayer
 var tween: Tween
 
 const SCENES = {
-	MENU = "res://src/main_scenes/menu_scene.tscn",
-	MAIN = "res://src/main_scenes/main_scene.tscn",
-	GAME_OVER = "res://src/main_scenes/game_over_scene.tscn"
+	MENU = "res://src/menu_scene.tscn",
+	MAIN = "res://src/main_scene.tscn",
+	GAME_OVER = "res://src/game_over_scene.tscn"
 }
 
 func _ready():

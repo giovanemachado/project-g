@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://dj00ry5omewpr"]
+[gd_scene format=3 uid="uid://dj00ry5omewpr"]
 
-[ext_resource type="Script" uid="uid://da7ukf21tembc" path="res://src/main_scenes/game_over_scene.gd" id="1_giqi7"]
+[ext_resource type="Script" uid="uid://da7ukf21tembc" path="res://src/game_over_scene.gd" id="1_giqi7"]
 [ext_resource type="Theme" uid="uid://c8sxw4adffktc" path="res://src/theme.tres" id="2_yr7hi"]
 
 [node name="GameOver" type="Node"]
