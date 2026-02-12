@@ -9,7 +9,7 @@ Guide to use this FSM.
 - Attach a [Object][YourState]State Node to the initial state field into [Object]StateManager Node.
 - Optional: Make them UniqueNames so you can easily reference them later.
 
-ps: Important to follow the names because of script names, 
+ps: Important to follow the names because of script names,
 if there are more than 1 FSM on the game it will cause conflicts
 
 
@@ -17,12 +17,12 @@ On [Object]StateManager script you can do:
 ```
 func _ready():
 	super._ready()
-	
+
 ```
 
 On [Object][YourState]State you can do:
 ```
-func _on_enter():
+func _on_state_enter():
 	print("On Enter this state")
 ```
 
@@ -32,7 +32,7 @@ Anywhere you can do:
 	# import
 	@onready var object_state_manager: ObjectStateManager = %ObjectStateManager
 	@onready var object_tutorial_state: ObjectTutorialState = %ObjectTutorialState
-	
+
 	# anywhere else
-	object_state_manager.transition_to(object_tutorial_state)
+	object_state_manager.transition_to_state(object_tutorial_state)
 ```
